@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>{% block title %} {% endblock %}</title>
+<meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<link rel="icon" href="https://dl.dropboxusercontent.com/u/60582062/site/favicon.ico" />
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/60582062/site/style.css" media="all" />
+<link rel="alternate" type="application/rss+xml" href="" />
+</head>
+<body>
+    <hr class="top_separator">
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="/">Linux Microblog</a></h1>
+        
+            <ul class="nav nav-pills">
+                <li><a href="/">inicio</a></li>
+                <li><a href="https://dl.dropboxusercontent.com/u/60582062/newspost.zip">descargar</a></li>
+                <li><a href="/feed/">rss</a></li>
+            </ul>
+        </div>
+        
+    </header>
+	<div class="container">
+		{% block container %}  {% endblock %}
+        
+        <div class="footer">
+            <p>2013 (cc) tiene el derecho de <a href="https://dl.dropboxusercontent.com/u/60582062/newspost.zip">descargar</a> el c&oacute;digo, modificarlo y disponerlo al p&uacute;blico bajo estas mismas condiciones.</p>
+        </div>
+	</div>
+</body>
+</html>
